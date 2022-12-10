@@ -1,0 +1,112 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+.container{
+	height: 100%;
+	width: 100%;
+	background-position: center;
+	background-size: cover;
+	position: absolute;
+	background-color: black;
+}
+.formbox{
+	   width: 450px;
+	   height: 380px;
+	   position: justify;
+	   margin: 5% auto;
+	   background: #fff;
+	   padding: 15px;
+	   border-radius: 10px;
+	   border-style: groove;
+}   
+.formbox h1{
+	width:  450px;
+	font-family: sans-serif;
+	text-align: center;
+	color: black;
+	font-size: 30px;
+	margin: 3px;
+	padding: 8px;
+}
+
+.formbox h2{
+	width:  450px;
+	font-family: sans-serif;
+	text-align: center;
+	color: #353935;
+	font-size: 30px;
+	margin: 3px;
+	padding: 8px;
+
+}
+.formbox h3{
+	width: 380;
+	font-family: serif;
+	text-align: center;
+	color: #353935;
+	font-size: 16px;
+	margin: 2px; 
+	padding: 3px;
+
+}
+.formbox h5{ 
+	width: 380;
+	font-family: sans-serif;
+	text-align: center;
+	color: #353935;
+	font-size: 10px;
+	margin: 2px;
+	padding: 3px;
+
+}
+.social-icon{
+	margin: 10px auto ;
+	text-align: center;
+	border-radius: 30px;
+}
+.social-icon img{
+	width: 20px;
+	border-radius: 50%;
+	margin:0 12px;
+	cursor: pointer;
+	box-lines: 
+
+}
+
+.input{
+	position: absolute;
+	width: 280px;
+	transition: .5s;
+	font-family: sans-serif;
+	font-size: 12px;
+	padding: 30px;
+	margin: -20px;
+}
+.inputs{
+	width: 150%;
+	padding: 3px;
+}
+label{
+	padding: 5px;
+	line-height: 30px;
+}
+.check-box{
+	font-family: sans-serif;
+	width: 12px;
+	font-size: 8px;
+	text-align: left;
+	line-height: 50px;
+}
+span{
+	line-height: -20px;
+	font-size: 10px;
+}
+button{
+	width: 150%;
+	padding: 4px;
+	cursor: pointer;
+	background-color: #0000FF;
+	color: white;
+	border-radius: 7px;
+}
