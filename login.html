@@ -1,39 +1,61 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
 	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>login</title>
-	<link rel="stylesheet" type="text/css" href="style1.css">
-	<script src="https://kit.fontawesome.com/31e4f7dfe5.js" crossorigin="anonymous"></script>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+	<link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+	<link rel="icon" type="image/png" sizes="32x32" href="./Assets/Frame 361.png">
+	<title>Login</title>
 </head>
 <body>
-  <div class="container">
-    <div class="formbox">
-	<h1>Hello! Welcome Back</h1>
-	<p style="text-align: center; font-size: 12px;">Login Using</p>
-  <div class="social-icon">
-    <img src="facebook.png">
-    <img src="google.png">
-    <img src="linked.png">
-  </div>
-    <h5 style="text-align:center;">Or</h5>  
-<form class="input">
-    <label for="email"><b>Email</b></label>
-    <br>
-    <input type="text" class="inputs" placeholder="example@gmail.com" name="email" required>
-    <br>
-    <label for="password"><b>Password</b></label>
-    <br>
-    <input type="text" class="inputs" placeholder="********" name="password" required>
-    <br>
-    <input type="checkbox" class="check-box"><span>Remember me</span>
-  
-     <br>
-     <button>Login</button>
-     <h6>Don't have an account?<a href="signup.html">Signup</a></h6>
-   </form>
- </div>
-     </div>
+	<main>
+		<section class="Login-main">
+			<section class="Login-section">
+				<div class="hello">
+					<article>
+						<h2>Hello! Welcome Back</h2>
+						<p>Login using</p>
+						<div>
+							<img src="./Assets/Group 6.png">
+							<img src="./Assets/Group 7.png">
+							<img src="./Assets/Group 8.png">
+						</div>
+					</article>
+					<p>Or</p>
+				</div>
+				<div class="fill-form">
+					<article>
+						<div>
+							<form action="./login" method="POST" class="form-group">
+								<label for="email">Email</label>
+                                <input type="email" id="email" placeholder="example@gmail.com" name="email" required>
+                            </form>
+                            <form action="./login" method="POST" class="form-group form-groups">
+                                <label for="password">Password</label>
+                                <div class="password-container">
+                                	<input type="password" id="password" style="background-color: #F9F9F9; border: none;" placeholder="password" name="password" required >
+                                	<i class="fa-solid fa-eye" id="eye"></i>
+                                </div>
+                            </form>
+                            <div class="checkbox-div">
+                        	<p><input type="checkbox" name="checkbox">Remember me</p>
+                            <a style="color: #8ECAE6;" href="#">Forgot password?</a>
+                            </div> 
+                        </div>
+                        <button type="submit" class="btn" name="submit">Login</button>
+					</article>
+					<p>Don’t have an account? <a style="color: #374AFC;" href="./Signup.html">Signup</a>
+				</div>
+			</section>
+			
+		</section>
+	</main>
+	<script src="style.js"></script>
 </body>
 </html>

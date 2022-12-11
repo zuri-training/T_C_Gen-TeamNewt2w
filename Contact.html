@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" sizes="32x32" href="./Assets/Frame 361.png">
     <title>Contact Us</title>
     <link rel="stylesheet" href="style.css" />
   </head>
@@ -14,44 +15,42 @@
       <div>
         <a href="./index.html">Home</a>
         <a href="./AboutUs.html">About Us</a>
-        <a href="./contactUs.html">Contact Us</a>
+        <a href="./Contact.html">Contact Us</a>
         <a href="#">Team</a>
       </div>
       <div>
-        <button id="log-in">Log In</button>
-        <button id="sign-up">Sign Up</button>
+        <a href="./Login.html" id="log-in">Log In</a>
+        <a href="./Signup.html" id="sign-up">Sign Up</a>
       </div>
     </nav>
     <!-- Contact US -->
-    <main class="contact-us">
-      <h1>Contact Us</h1>
-      <p>
-        Would you like to know more about our terms &conditions Generator or
-        have any issue to enquire from us? Our Support Team are always here to
-        help you. Don't hesitate to reach us to us.
-      </p>
-      <p class="green-text">
-        info@newt.com +234- 806 303 0305 +234- 814 718 6985
-      </p>
+    <main class="contact-main">
+      <section  class="contact-us">
+        <h1>Contact Us</h1>
+        <p>
+          Would you like to know more about our terms &conditions Generator or have any issue to enquire from us? Our Support Team are always here tohelp you. Don't hesitate to reach us to us.
+        </p>
+        <p class="green-text" style="color: #149014;">info@newt.com +234- 806 303 0305 +234- 814 718 6985</p>
+      </section>
+      
       <h3>Send Us A Message Now</h3>
-      <div class="input-container">
-        <input class="contact-input" type="text" placeholder="FirstName" />
-        <input class="contact-input" type="text" placeholder="LastName" />
-        <input class="contact-input" type="email" placeholder="Email" />
-        <input class="contact-input" type="text" placeholder="SubjectName" />
-      </div>
-      <!-- <input
-        class="contact-input"
-        id="message-input"
-        type="text"
-        placeholder="Write your message here"
-      /> -->
-      <textarea
+      <section class="input-container">
+        <div>
+          <input class="contact-input" type="text"placeholder="FirstName" />
+          <input class="contact-input" type="text" placeholder="LastName" />
+        </div>
+        <div>
+          <input class="contact-input" type="email" placeholder="Email" />
+          <input class="contact-input" type="text" placeholder="SubjectName" />
+        </div>
+        <textarea
         name="message-input"
-        class="contact-input"
         id="message-input"
         placeholder="Write your message here"
       ></textarea>
+      </section>
+      <button type="submit" id="contact-send">SEND</button>
+      
     </main>
     <!-- Footer -->
     <footer>
