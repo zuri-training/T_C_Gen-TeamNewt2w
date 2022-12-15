@@ -23,7 +23,7 @@ nav a {
   color: #252525;
   margin-left: 50px;
 }
-nav button {
+#log-in, #sign-up {
   width: 90px;
   height: 28px;
   border-radius: 7px;
@@ -35,10 +35,6 @@ nav button {
   border: none;
   padding: 10px 24px;
   box-shadow: 0px 12px 32px rgba(0, 0, 0, 0.16);
-  width: 90px;
-  height: 28px;
-  border-radius: 8px;
-  margin: 5px;
 }
 #log-in {
   box-shadow: 0px 12px 32px rgba(0, 0, 0, 0.16);
@@ -46,10 +42,6 @@ nav button {
   background-color: #fff;
   color: #3ebb3e;
   border: 1.5px solid #3ebb3e;
-  width: 90px;
-  height: 28px;
-  border-radius: 8px;
-  margin: 5px;
 }
 .green-text {
   color: #3ebb3e;
