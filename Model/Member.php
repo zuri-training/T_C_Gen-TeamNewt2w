@@ -18,7 +18,7 @@ class Member
      * @param string $username
      * @return boolean
      */
-    public function isUsernameExists($username)
+   /* public function isUsernameExists($username)
     {
         $query = 'SELECT * FROM tbl_member where username = ?';
         $paramType = 's';
@@ -36,7 +36,7 @@ class Member
             $result = false;
         }
         return $result;
-    }
+    }*/
 
     /**
      * to check if the email already exists
@@ -71,14 +71,8 @@ class Member
      */
     public function registerMember()
     {
-        $isUsernameExists = $this->isUsernameExists($_POST["username"]);
         $isEmailExists = $this->isEmailExists($_POST["email"]);
-        if ($isUsernameExists) {
-            $response = array(
-                "status" => "error",
-                "message" => "Username already exists."
-            );
-        } else if ($isEmailExists) {
+         if ($isEmailExists) {
             $response = array(
                 "status" => "error",
                 "message" => "Email already exists."
@@ -90,10 +84,9 @@ class Member
                 // do not attempt to do your own encryption, it is not safe
                 $hashedPassword = password_hash($_POST["signup-password"], PASSWORD_DEFAULT);
             }
-            $query = 'INSERT INTO tbl_member (username, password, email) VALUES (?, ?, ?)';
-            $paramType = 'sss';
+            $query = 'INSERT INTO tbl_member ( password, email) VALUES (?, ?)';
+            $paramType = 'ss';
             $paramValue = array(
-                $_POST["username"],
                 $hashedPassword,
                 $_POST["email"]
             );
@@ -101,19 +94,19 @@ class Member
             if (! empty($memberId)) {
                 $response = array(
                     "status" => "success",
-                    "message" => "You have registered successfully."
+                    "message" => "You have registered successfully. Please click on login below!"
                 );
             }
         }
         return $response;
     }
 
-    public function getMember($username)
+    public function getMember($email)
     {
-        $query = 'SELECT * FROM tbl_member where username = ?';
+        $query = 'SELECT * FROM tbl_member where email = ?';
         $paramType = 's';
         $paramValue = array(
-            $username
+            $email
         );
         $memberRecord = $this->ds->select($query, $paramType, $paramValue);
         return $memberRecord;
@@ -126,7 +119,7 @@ class Member
      */
     public function loginMember()
     {
-        $memberRecord = $this->getMember($_POST["username"]);
+        $memberRecord = $this->getMember($_POST["email"]);
         $loginPassword = 0;
         if (! empty($memberRecord)) {
             if (! empty($_POST["login-password"])) {
@@ -144,12 +137,12 @@ class Member
             // login success so store the member's username in
             // the session
             session_start();
-            $_SESSION["username"] = $memberRecord[0]["username"];
+            $_SESSION["email"] = $memberRecord[0]["email"];
             session_write_close();
             $url = "./dashboard.php";
             header("Location: $url");
         } else if ($loginPassword == 0) {
-            $loginStatus = "Invalid username or password.";
+            $loginStatus = "Invalid email or password.";
             return $loginStatus;
         }
     }
