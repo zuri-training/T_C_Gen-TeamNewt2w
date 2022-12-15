@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard</title>
+    <link rel="stylesheet" type="text/css" href="../assets/css/styles.css">
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="../assets/img/Frame 361.png"
+    />
+  </head>
+  <body>
+    <!-- NavBar -->
+    <nav id="home">
+      <a href="../dashboard.php" class="logo"><strong>New</strong>T</a>
+      <div>
+        <img src="../assets/img/Ellipse 10.png" />
+      </div>
+    </nav>
+    <main>
+      <aside>
+        <div>
+          <div class="side-options active">
+            <img
+              src="../assets/img/menu-grid-outline.png"
+              alt="logo"
+            />
+           <a href="../dashboard.php"><p>User Dashboard</p></a> 
+          </div>
+          <div class="side-options">
+            <img src="../assets/img/file-arrow-up-light.png" alt="logo" />
+            <a href="../files.html"><p>Files</p></a>
+          </div>
+          <div class="side-options">
+            <img src="../assets/img/settings-check.png" alt="logo" />
+            <a href="../settings.html"><p>Settings</p></a>
+          </div>
+          <div class="side-options">
+            <img src="../assets/img/support-outline.png" alt="logo" />
+            <a href="../support.html"><p>Support</p></a>
+          </div>
+        </div>
+        <div class="side-options">
+          <img src="../assets/img/carbon_logout.png" alt="logo" />
+          Logout
+        </div>
+      </aside>
+      <div class="main-content-two">
+        <p>
+          Dashboard <span class="green-text">></span>Terms and Condition
+          <span class="green-text">></span><b>Mobile App Terms & Conditions</b>
+        </p>
+        <img class="line" src="../assets/img/line-2.png" />
+        <form action="./stage-three1.html" id="stage-two-form">
+          <label for="name"><b> What is your App Name</b> </label><br/>
+          <input class="text-input" required type="text" placeholder="My App" id="name" /><br />
+          <label for="entity-type"><b> What is your App entity type?</b><label><br />
+          <input class="radio-two-input" required name="entity-type" type="radio" value="individual" />Individual <br />
+          <input class="radio-two-input" required name="entity-type" type="radio" value="Business" />Business (Cooperation,
+          Non-Profit, Partnership, limited Liability Comapny...) <br>
+          <div style="display: grid;grid-template-columns: auto auto;">
+            <label for="country"><b> Enter your country. </b></label>
+          <label for="state"> <b>Enter your state.</b></label>
+          <input class="text-input" required type="text" placeholder="My Country" id="country"/>
+          <input class="text-input" required type="text" placeholder="My State" id="state"/>
+          </div>
+          <button class="next-step-btn" style="margin-top: 110px;margin-left: 40%;">Next Step</button>
+        </form>
+      </div>
+    </main>
+    <footer class="Dashboard-footer">
+      <a href="#">Help</a>
+      <a href="#">Support</a>
+      <a href="#">Contact Us</a>
+      <a href="#">FAQs</a>
+      <a href="#">Legal Dictionary</a>
+      <a href="#">Security FAQ</a>
+      <a href="#">Blog</a>
+      <a href="#">Newsletter</a>
+    </footer>
+  </body>
+</html>
