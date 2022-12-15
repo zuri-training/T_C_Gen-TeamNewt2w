@@ -792,3 +792,13 @@ h1 {
   gap: 60px;
   padding: 10px 0px;
 }
+
+/* signup */
+
+.register-main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 5%;
+}
