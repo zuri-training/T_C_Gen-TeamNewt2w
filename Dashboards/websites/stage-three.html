@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="../style.css" />
+  </head>
+  <body>
+    <!-- NavBar -->
+    <nav id="home">
+      <a href="../index.html" class="logo"><strong>New</strong>T</a>
+      <div>
+        <img src="../assests/Ellipse 10.png" />
+      </div>
+    </nav>
+    <main>
+      <aside style="height: 151vh;">
+        <div>
+          <div class="side-options active">
+            <img src="../assests/menu-grid-outline.png" alt="logo" />
+            <a href="./mobile-app/stage-two.html"><p>User Dashboard</p></a>
+          </div>
+          <div class="side-options">
+            <img src="../assests/file-arrow-up-light.png" alt="logo" />
+            <p>Files</p>
+          </div>
+          <div class="side-options">
+            <img src="../assests/settings-check.png" alt="logo" />
+            <p>Settings</p>
+          </div>
+          <div class="side-options">
+            <img src="../assests/support-outline.png" alt="logo" />
+            <p>Support</p>
+          </div>
+        </div>
+        <div class="side-options">
+          <img src="../assests/carbon_logout.png" alt="logo" />
+          Logout
+        </div>
+      </aside>
+      <div class="main-content-three">
+        <p>
+          Dashboard <span class="green-text">></span>Terms and Condition
+          <span class="green-text">></span><b>website Terms & Conditions</b>
+        </p>
+        <img class="line" src="../assests/line-3.png" />
+        <form action="./stage-four.html" id="stage-three-form">
+          <b> Can users create Account?</b><br />
+          <input type="radio" required name="account" id="yes" /><label for="yes"
+            >Yes</label
+          >
+          <input type="radio" required name="account" id="no" /><label for="no"
+            >No</label
+          >
+          <br />
+          <b> Do you collect personal information?</b><br />
+          <input type="radio" required name="personal-info" id="yes" /><label for="yes"
+            >Yes</label
+          >
+          <input type="radio" required name="personal-info" id="no" /><label for="no"
+            >No</label
+          ><br />
+          <input type="checkbox" name="name" id="name" /> Name/Username <br />
+          <input type="checkbox" name="number" id="number" />Phone Number(s) <br>
+          <input type="checkbox" name="email" id="number" />Email Address <br>
+          <input type="checkbox" name="mailing-ad" id="number" />Mailing Adress(s) <br>
+          <input type="checkbox" name="job" id="number" />Job Tittle(s) <br>
+          <input type="checkbox" name="billing-ad" id="number" />Biiling Adress(s) <br>
+          <input type="checkbox" name="card-number" id="number" />Credit/Debit Card Number <br>
+          <input type="checkbox" name="age" id="number" />Age <br>
+          <input type="checkbox" name="password" id="number" />Password <br>
+          <b> Does your website show Ads?</b><br />
+          <input type="radio" required name="show-ads" id="yes" /><label for="yes">Yes</label>
+          <input type="radio" required name="show-ads" id="no" /><label for="no">No</label><br />
+          <b> Do you use digital analytics software for tracking purposes?</b><br />
+          <input type="radio" required name="tracking" id="yes" /><label for="yes">Yes</label>
+          <input type="radio" required name="tracking" id="no" /><label for="no">No</label><br />
+          <b>How can users contact you regarding any questions for Terms and Conditions</b><br />
+          <input type="radio" required name="contact" id="contact-email" /><label for="contact-email">Through Email</label><br>
+          <input type="radio" required name="contact" id="contact-phone" /><label for="contact-phone">By Phone number</label><br />
+          <input type="radio" required name="contact" id="contact-website" /><label for="contact-website">By Visiting a page on our website</label><br />
+          <b> which of the following does your website use</b><br />
+          <p style="margin-top: 5px;">Select all that apply OR ignore if none</p>
+          <input type="checkbox" name="google-map-apis" id="google-map-apis">Google Map Apis <br>
+          <input type="checkbox" name="local-storage" id="local-storage">local Storage<br>
+          <input type="checkbox" name="sessions" id="sessions">Sessions<br>
+          <input type="checkbox" name="cookies" id="cookies">Cookies and/or Beacons
+          <button class="next-step-btn" style="margin-top: 50px;margin-left: 40%;">Next Step</button>
+        </form>
+      </div>
+    </main>
+    <footer class="Dashboard-footer">
+      <a href="#">Help</a>
+      <a href="#">Support</a>
+      <a href="#">Contact Us</a>
+      <a href="#">FAQs</a>
+      <a href="#">Legal Dictionary</a>
+      <a href="#">Security FAQ</a>
+      <a href="#">Blog</a>
+      <a href="#">Newsletter</a>
+    </footer>
+  </body>
+</html>

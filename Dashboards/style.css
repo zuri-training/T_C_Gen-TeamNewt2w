@@ -1,0 +1,225 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Poppins", sans-serif;
+}
+/* navbar */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 60px;
+  padding: 20px 60px;
+  box-shadow: 0px 12px 32px rgba(138, 126, 186, 0.24);
+}
+.logo {
+  font-size: 1.3em;
+  text-decoration: none;
+  color: #252525;
+}
+nav img {
+  width: 40px;
+  height: 40px;
+}
+main {
+  display: flex;
+}
+aside {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 235px;
+  height: 83vh;
+  box-shadow: 5px 0px 32px rgba(138, 126, 186, 0.24);
+  padding: 20px 0 0 15px;
+}
+.side-options {
+  padding: 10px;
+  display: flex;
+  height: 35px;
+}
+aside img {
+  color: #f9f9f9;
+  width: 22px;
+  height: 22px;
+  margin-right: 8px;
+}
+.active {
+  background-color: blueviolet;
+  border-radius: 10px; 
+}
+.active a{
+color: #fff;
+}
+aside a {
+  text-decoration: none;
+  color: #252525;
+}
+.main-content,
+.main-content-two,
+.main-content-three,
+.main-content-four,
+.main-content-support,
+.main-content-files {
+  padding: 40px 50px;
+}
+
+.main-content h3,
+p,
+h4 {
+  margin-bottom: 10px;
+  word-spacing: 3px;
+  letter-spacing: 0.3px;
+}
+.container {
+  display: flex;
+}
+.containers {
+  height: 350px;
+  width: 280px;
+  border: 40px solid #fff;
+  box-shadow: 6px 10px 2px rgba(138, 126, 186, 0.24);
+  margin: 40px 65px 0 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.Dashboard-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 52px;
+  padding: 20px 10px 20px 350px;
+  box-shadow: 0px -12px 32px rgba(138, 126, 186, 0.24);
+}
+.Dashboard-footer a {
+  color: rgb(37, 37, 37);
+  text-decoration: none;
+  font-size: 90%;
+}
+.green-text {
+  color: #4ecb71;
+}
+.line {
+  width: 520px;
+  height: 50px;
+  margin-left: -15px;
+  margin-bottom: 5px;
+}
+.container-one {
+  display: flex;
+}
+.containers-one {
+  height: 220px;
+  width: 370px;
+  border: 4px solid #fff;
+  box-shadow: 6px 6px 13px #fff, 6px 6px 13px rgb(0 0 0 / 16%);
+  margin: 40px 50px 0 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.containers-one img {
+  width: 80px;
+  height: 80px;
+  margin-bottom: 20px;
+}
+.next-step-btn {
+  width: 185px;
+  height: 40px;
+  background-color: #5c37ee;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+}
+.next-step {
+  margin: 45px 0 -17px 0;
+  display: flex;
+  justify-content: center;
+}
+.text-input {
+  margin: 10px 30px 10px 0;
+  width: 330px;
+  height: 30px;
+  border-radius: 5px;
+  text-indent: 5px;
+}
+.radio-two-input, .main-content-three input[type="radio"]{
+  margin: 10px 5px 10px 0;
+  accent-color: #3ebb3e;
+}
+input[type="checkbox"]{
+  margin:10px 5px 5px 15px;
+  accent-color: #3ebb3e;
+}
+.main-content-four{
+  width: 80%;
+}
+.container-stagefour{
+  display: flex;
+  justify-content: space-between;
+}
+#stagefour-input{
+  text-indent: 10px;
+  width: 300px;
+  height: 28px;
+  border-radius: 5px;
+}
+.preview img{
+  width: 278px;
+  box-shadow: 6px 6px 13px #fff, 6px 6px 13px rgb(0 0 0 / 16%);
+}
+.preview button{
+  width: 100px;
+  height: 30px;
+  border-radius: 5px;
+  background-color: #fff;
+  color: #3ebb3e;
+  border: 1.5px solid #3ebb3e;
+  position: relative;
+  right: 200px;
+  top: 30px;
+}
+#button1{
+  width: 205px;
+  height: 40px;
+  border-radius: 5px;
+  background-color: #fff;
+  color: #3ebb3e;
+  border: 1.5px solid #3ebb3e;
+}
+#button2{
+  width: 195px;
+  height: 40px;
+  border-radius: 5px;
+  margin-right: 20px;
+  background-color: #5c37ee;
+  color: #fff;
+  border: none;
+  margin-left: 20px;
+  margin-bottom: 60px;
+}
+.main-content-support h5{
+  margin: 10px 0 50px;
+}
+.files-nav{
+  display: flex;
+  justify-content: space-between;
+  line-height: 30px;
+}
+#step-onebtn{
+  text-decoration: none;
+  color: #fff;
+}
+#search{
+  width: 390px;
+  height: 40px;
+  border-radius: 8px;
+  text-indent: 8px;
+  font-size: large;
+}
