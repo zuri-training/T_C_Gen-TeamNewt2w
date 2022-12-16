@@ -26,10 +26,7 @@ You can now interact with the application as a Guest.
 3. Can generate selected files with the right data and information
 4. Allowed to export, download, share and use website embed
 5. Allow user save data and come back to download
-
-- To have access as a regsitered user, kindly use the following credentials:
-- username: 
-- password: 
+ 
 
 
 ## Tech Stack
@@ -49,6 +46,8 @@ You can now interact with the application as a Guest.
 
 - [@Team NEWT2W](https://www.github.com/)
 
+## Live Site
+- [Newt](https://newt-gen.000webhostapp.com/)
 
 ## Acknowledgements
 
