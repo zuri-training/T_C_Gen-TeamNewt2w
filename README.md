@@ -5,11 +5,12 @@
 This platform allow users to generate Terms and Conditions (T&C) and Privacy Policy, a project done by TEAM NEWT2W in partial fulfillment of the requirtements for Zuri Cohort 2 Training
 # Documentation
 
-    Newt is a platform that allows users to generate terms and conditions and privacy policy. The project idea originated from Zuri training and powered by Ingressive for Good, the idea behind that is to test the knowledge of the just graduated students. 
+Newt is a platform that allows users to generate terms and conditions and privacy policy. The project idea originated from Zuri training and powered by Ingressive for Good, the idea behind that is to test the knowledge of the just graduated students. 
+
 The project was carried out by a team of Product Designers, Frontend and Backend developers. A research plan was drawn up by the product designers which aided the design process, the frontend and backend developers then implemented the designs and the required features. 
 
 
-## [This is the full documentation](https://docs.google.com/document/d/1NSEpMLDJSgGxyOhgz5iMVLX5_xLs7Wd-CJASf10eq7Q/edit?usp=sharing)
+## [Click here to view the full documentation](https://docs.google.com/document/d/1NSEpMLDJSgGxyOhgz5iMVLX5_xLs7Wd-CJASf10eq7Q/edit?usp=sharing)
 
 # Features
 
@@ -76,7 +77,25 @@ http://localhost/T_C_Gen-TeamNewt2w
 
 ## Contributors
 
-- [@Team NEWT2W](https://github.com/orgs/zuri-training/teams/newt2w/members)
+# [@Team NEWT2W](https://github.com/orgs/zuri-training/teams/newt2w/members)
+
+- [Amarachi Iheakam](github.com/Cozyamy) - PHP Backend (Team Lead)
+- [Taofeeq Adebayo](github.com/Buildmychoice) - Product Designer (Design Lead)
+- [Ismail Moshood](github.com/IsmailMoshood) - Fullstack PHP (Developers Lead)
+- [Abdullateef Hamza](github.com/zlatz) - Product Designer 
+- [Chidinma Okoye](github.com/Dimpledee29) - Product Designer
+- [Samuel Opara](github.com/sammuzor) - Product Designer
+- [Rita Michael](github.com/Rita2-tech) - Product Designer
+- [Francis Okenwa](github.com/Fokenwa1) - Product Designer
+- [Oluchi Oprarugo](github.com/Pwidyluchi) - Product Designer
+- [Ogechi Ibedionu](github.com/Ibedionu) - Product Designer
+- [Emmanuel Ajayi](github.com/walkerofficial) - Product Designer
+- [Kojo Adejumo](github.com/Kojoadez11) - Product Designer
+- [Ikechukwu Anyasi](github.com/joshiyke) - PHP Backend
+- [Adetola Adekuoye](github.com/Deyytola) - Frontend Developer
+- [Comfort Yusuff](github.com/Comfortvize) - Frontend Developer
+- [Precious Uzebu](github.com/preciousuzebu) - Frontend Developer
+
 
 
 
