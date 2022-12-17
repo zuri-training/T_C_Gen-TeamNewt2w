@@ -1,10 +1,15 @@
 
 # T&C and Privacy Policy Generator
+# NEWT
 
 This platform allow users to generate Terms and Conditions (T&C) and Privacy Policy, a project done by TEAM NEWT2W in partial fulfillment of the requirtements for Zuri Cohort 2 Training
 # Documentation
 
-## To be made available as the Project progresses...
+    Newt is a platform that allows users to generate terms and conditions and privacy policy. The project idea originated from Zuri training and powered by Ingressive for Good, the idea behind that is to test the knowledge of the just graduated students. 
+The project was carried out by a team of Product Designers, Frontend and Backend developers. A research plan was drawn up by the product designers which aided the design process, the frontend and backend developers then implemented the designs and the required features. 
+
+
+## [This is the full documentation](https://docs.google.com/document/d/1NSEpMLDJSgGxyOhgz5iMVLX5_xLs7Wd-CJASf10eq7Q/edit?usp=sharing)
 
 # Features
 
@@ -40,14 +45,40 @@ You can now interact with the application as a Guest.
 
 ## Useful Resources
 
-- Database Schema
-- Designs from the Product Design Team
-## Contributors
-
-- [@Team NEWT2W](https://www.github.com/)
+- [Database Schema](https://www.figma.com/file/pRGRifQPxrwsxGk7USvGrS/Team-Newt2w---Database-Schema?node-id=0%3A1&t=10L9G666KPRMMSIg-1)
+- [Designs from the Product Design Team](https://www.figma.com/file/ro6T4oNHhLof3GZYRdSfsd/Team-Newt2w?node-id=354%3A681&t=CJfLebFYhrM0GWnf-1)
 
 ## Live Site
+
 - [Newt](https://newt-gen.000webhostapp.com/)
+
+## Set up
+- Download and install PHP
+- Download and install XAMPP
+- Open the Xampp folder, open the htdocs folder
+- Clone the repository using
+
+```bash
+git clone https://github.com/zuri-training/T_C_Gen-TeamNewt2w.git
+```
+- Run
+
+```bash
+cd T_C_Gen-TeamNewt2w
+```
+- Create a database called t_c_gen in your phpmyadmin
+- Import the t_c_gen.sql file to the database
+- Start Xampp
+- Access Newt using
+```bash
+http://localhost/T_C_Gen-TeamNewt2w
+```
+
+## Contributors
+
+- [@Team NEWT2W](https://github.com/orgs/zuri-training/teams/newt2w/members)
+
+
 
 ## Acknowledgements
 
