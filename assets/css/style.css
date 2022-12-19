@@ -23,12 +23,6 @@ nav a {
   color: #252525;
   margin-left: 50px;
 }
-nav button {
-  width: 90px;
-  height: 28px;
-  border-radius: 7px;
-  margin: 5px;
-}
 #sign-up {
   background-color: #5c37ee;
   color: #fff;
@@ -107,7 +101,7 @@ nav button {
   box-shadow: 0px 12px 32px rgba(138, 126, 186, 0.24);
   text-align: center;
 }
-.classification {
+#classification {
   margin: 110px 65px;
   background-color: #cec3c7;
   text-align: center;
@@ -197,6 +191,9 @@ nav button {
   margin: 30px;
   font-size: 1.2em;
 }
+.choose-bottom-left{
+  width: 50%;
+}
 .choose-lists img {
   height: 30px;
   width: 30px;
@@ -206,7 +203,7 @@ nav button {
   color: #fff;
   margin: 50px 0;
   height: 558px;
-  background-image: url(./assets/img/Reviews\ Section.png);
+  background-image: url(../img/Reviews\ Section.png);
   padding: 20px;
 }
 .carousel-tittle {
