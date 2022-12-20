@@ -51,28 +51,48 @@
       </aside>
       <div class="main-content-two">
         <p>
-          Dashboard <span class="green-text">></span>Terms and Condition
-          <span class="green-text">></span><b>Website Terms & Conditions</b>
+          Dashboard <span class="green-text">></span>Terms and Conditions
+          <span class="green-text">></span><b>Website Terms and Conditions</b>
         </p>
-        <img class="line" src="../assets/img/line-2.png" />
-        <form action="./stage-three1.html" id="stage-two-form">
+        <img class="line" src="../assets/img/Frame 290 (1).png" />
+        <form action="./generate-pdf.php" id="stage-two-form" method="POST">
           <label for="url"><b> What is your website url?</b> </label><br/>
-          <input class="text-input" type="text" required placeholder="http://www.mysite.com" id="url" /><br />
+          <input class="text-input" type="text" name="url" required placeholder="http://www.mysite.com" id="url" /><br />
           <label for="name"><b> What is your website name?</b> </label><br/>
-          <input class="text-input" type="text" required placeholder="Mysite" id="name" /><br />
-          <label for="entity-type"><b> What is your website entity-type</b><label><br />
-            <input class="radio-two-input" required name="entity-type" type="radio" value="individual" />Individual <br />
-            <input class="radio-two-input" required name="entity-type" type="radio" value="Business" />Business (Cooperation,
+          <input class="text-input" type="text" name="name" required placeholder="Mysite" id="name" /><br />
+          <label for="entity"><b> What is your website entity-type</b><label><br />
+            <input class="radio-two-input" required name="entity" type="radio" value="individual" />Individual <br />
+            <input class="radio-two-input" required name="entity" type="radio" value="Business" />Business (Cooperation,
             Non-Profit, Partnership, limited Liability Comapny...) <br>
           <div style="display: grid;grid-template-columns: auto auto;">
             <label for="country"><b> Enter your country. </b></label>
           <label for="state"> <b>Enter your state.</b></label>
-          <input class="text-input" type="text" required placeholder="My Country" id="country"/>
-           <input class="text-input" type="text" required placeholder="My State" id="state"/>
+          <input class="text-input" type="text" name="country" required placeholder="My Country" id="country"/>
+           <input class="text-input" type="text" name="state" required placeholder="My State" id="state"/>
           </div>
-          <button class="next-step-btn" style="margin-top: 50px;margin-left: 40%;">Next Step</button>
-        </form>
+          
+          <div class="main-content-four">
+        <div class="container-stagefour" style="; gap: 3%;">
+          <div style="margin-top: 20%; ">
+            <h4>
+              Your email address to receive the <br />
+              Terms and conditions
+            </h4>
+            <input type="text" re placeholder="example@gmail.com" id="stagefour-input"/>
+          </div>
+          <form action="./generate-pdf.php">
+            <div class="preview">
+            <img src="../assets/img/Frame 362.png" />
+            <button style="margin-left: 100%; margin-top: 20%;" type="submit">Preview</button>
+            <button style="margin-left: -60%;" id="button1" type="submit">Generate and Download</button>
+            <button id="button2" type="submit">Generate</button>
+          </div>
+          </form>
+          
+        </div>
       </div>
+    </form>
+    </div>
     </main>
     <footer class="Dashboard-footer">
       <a href="#">Help</a>

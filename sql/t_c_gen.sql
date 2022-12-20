@@ -35,6 +35,22 @@ CREATE TABLE `tbl_member` (
   `create_at` timestamp NOT NULL DEFAULT current_timestamp() ON UPDATE current_timestamp()
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
+
+
+CREATE TABLE `form_details` (
+  `id` int(11) NOT NULL,
+  `web_name` varchar(250) NOT NULL,
+  `entity_type` varchar(250) NOT NULL,
+  `Country` varchar(250) NOT NULL,
+  `State` varchar(250) NOT NULL,
+  `account` varchar(250) NOT NULL,
+  `show-ads` varchar(250) NOT NULL,
+  `tracking` varchar(250) NOT NULL,
+  `personal-info` varchar(250) NOT NULL,
+  `contact` varchar(250) NOT NULL,
+  `web_url` varchar(250) NOT NULL,
+  `create_at` timestamp NOT NULL DEFAULT current_timestamp() ON UPDATE current_timestamp()
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 --
 -- Indexes for dumped tables
 --
@@ -46,6 +62,10 @@ ALTER TABLE `tbl_member`
   ADD PRIMARY KEY (`id`);
 
 --
+
+
+ALTER TABLE `form_details`
+  ADD PRIMARY KEY (`id`);
 -- AUTO_INCREMENT for dumped tables
 --
 
@@ -53,6 +73,11 @@ ALTER TABLE `tbl_member`
 -- AUTO_INCREMENT for table `tbl_member`
 --
 ALTER TABLE `tbl_member`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+COMMIT;
+
+
+ALTER TABLE `form_details`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
 COMMIT;
 
