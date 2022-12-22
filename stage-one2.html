@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Dashboard</title>
     <link rel="stylesheet" type="text/css" href="./assets/css/styles.css">
+    <script src="https://kit.fontawesome.com/c2d4955c4d.js" crossorigin="anonymous"></script>
     <link
       rel="icon"
       type="image/png"
@@ -22,7 +23,7 @@
       </div>
     </nav>
     <main>
-      <aside>
+      <aside id="aside">
         <div>
           <div class="side-options active">
             <img
@@ -49,8 +50,9 @@
           Logout
         </div>
       </aside>
-      <div class="main-content">
-        <p>
+      <div class="main-content" style="align-items: flex-start;">
+        <i class="fa-solid fa-bars fa-2xl ham" ondblclick="toggleOff()" onclick="toggle()"></i>
+          <p>
           Dashboard <span class="green-text">></span> <b>Privacy Policy</b>
         </p>
         <img class="line" src="./assets/img/Frame 290.png" />
@@ -83,6 +85,18 @@
       <a href="#">Blog</a>
       <a href="#">Newsletter</a>
     </footer>
+    <style>
+      @media all and (min-width: 600px) {
+        .ham {
+          display: none;
+        }
+      }
+      @media all and (max-width: 600px) {
+        aside {
+          height: 150vh;
+        }
+      }
+    </style>
     <script>
       const websiteEl = document.getElementById("website")
       const mobileEl = document.getElementById("Mobile")
@@ -90,14 +104,20 @@
       function toggleOne(){
         websiteEl.style.borderColor = "green"
         mobileEl.style.borderColor = "white"
-        btnEl.setAttribute("href", "./websites/stage-two2.html") 
+        btnEl.setAttribute("href", "./websites/stage-two1.html") 
         console.log(btnEl)
       }
       function toggleTwo(){
         websiteEl.style.borderColor = "white"
         mobileEl.style.borderColor = "green"
-        btnEl.setAttribute("href", "./mobile-app/stage-two2.html")
+        btnEl.setAttribute("href", "./mobile-app/stage-two1.html")
         console.log(btnEl)
+      }
+      function toggle() {
+        document.getElementById("aside").style.display = "flex"
+      }
+      function toggleOff() {
+        document.getElementById("aside").style.display = "none"
       }
     </script>
   </body>

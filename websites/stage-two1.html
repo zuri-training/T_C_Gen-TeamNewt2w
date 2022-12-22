@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Dashboard</title>
     <link rel="stylesheet" type="text/css" href="../assets/css/styles.css">
+    <script src="https://kit.fontawesome.com/c2d4955c4d.js" crossorigin="anonymous"></script>
     <link
       rel="icon"
       type="image/png"
@@ -22,7 +23,7 @@
       </div>
     </nav>
     <main>
-      <aside>
+      <aside id="aside">
         <div>
           <div class="side-options active">
             <img
@@ -50,6 +51,7 @@
         </div>
       </aside>
       <div class="main-content-two">
+        <i class="fa-solid fa-bars fa-2xl ham" ondblclick="toggleOff()" onclick="toggle()"></i>
         <p>
           Dashboard <span class="green-text">></span>Terms and Conditions
           <span class="green-text">></span><b>Website Terms and Conditions</b>
@@ -64,15 +66,19 @@
             <input class="radio-two-input" required name="entity" type="radio" value="individual" />Individual <br />
             <input class="radio-two-input" required name="entity" type="radio" value="Business" />Business (Cooperation,
             Non-Profit, Partnership, limited Liability Comapny...) <br>
-          <div style="display: grid;grid-template-columns: auto auto;">
-            <label for="country"><b> Enter your country. </b></label>
-          <label for="state"> <b>Enter your state.</b></label>
+          <div class="grid-this">
+            <div>
+<label for="country"><b> Enter your country. </b></label>
           <input class="text-input" type="text" name="country" required placeholder="My Country" id="country"/>
-           <input class="text-input" type="text" name="state" required placeholder="My State" id="state"/>
+            </div>
+            <div>
+   <label for="state"> <b>Enter your state.</b></label>  
+         <input class="text-input" type="text" name="state" required placeholder="My State" id="state"/>
+            </div>
           </div>
           
           <div class="main-content-four">
-        <div class="container-stagefour" style="; gap: 3%;">
+        <div class="container-stagefour" style="gap: 3%;" >
           <div style="margin-top: 20%; ">
             <h4>
               Your email address to receive the <br />
@@ -84,8 +90,8 @@
             <div class="preview">
             <img src="../assets/img/Frame 362.png" />
             <button style="margin-left: 100%; margin-top: 20%;" type="submit">Preview</button>
-            <button style="margin-left: -60%;" id="button1" type="submit">Generate and Download</button>
-            <button id="button2" type="submit">Generate</button>
+              <!-- <button id="button1" type="submit">Generate </button> -->
+              <button id="button2" type="submit">Generate and Download</button>
           </div>
           </form>
           
@@ -104,5 +110,28 @@
       <a href="#">Blog</a>
       <a href="#">Newsletter</a>
     </footer>
+    <style>
+      @media all and (min-width: 600px) {
+        .ham {
+          display: none;
+        }
+        aside {
+          height: 160vh;
+        }
+      }
+      @media all and (max-width: 600px) {
+        aside {
+          height: 212vh;
+        }
+      }
+    </style>
+    <script>
+     function toggle() {
+      document.getElementById("aside").style.display = "flex"
+    }
+    function toggleOff() {
+      document.getElementById("aside").style.display = "none"
+    }
+  </script>
   </body>
 </html>

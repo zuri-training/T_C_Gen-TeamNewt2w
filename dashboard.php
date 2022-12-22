@@ -18,45 +18,47 @@ if (isset($_SESSION["email"])) {
 ?>
 <HTML>
 <HEAD>
-<TITLE>Welcome: Terms and Conditions Generator</TITLE>
-<link rel="stylesheet" type="text/css" href="./assets/css/styles.css">
-<link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="./assets/img/Frame 361.png"
-    />
+  <TITLE>Welcome: Terms and Conditions Generator</TITLE>
+  <link rel="stylesheet" type="text/css" href="./assets/css/styles.css">
+  <script src="https://kit.fontawesome.com/c2d4955c4d.js" crossorigin="anonymous"></script>
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/img/Frame 361.png" />
 </HEAD>
+
 <BODY>
-    <!-- <img src="./assets/bg.jpg" alt=""> -->
-	<div class="phppot-container" >
-         <nav id="home">
+  <!-- <img src="./assets/bg.jpg" alt=""> -->
+  <div class="phppot-container">
+    <nav id="home">
       <a href="./dashboard.php" class="logo"><strong>New</strong>T</a>
       <div>
         <img src="./assets/img/Ellipse 10.png">
       </div>
     </nav>
     <main>
-      <aside>
+      <aside id="aside">
         <div>
           <div class="side-options active">
-            <img
-              src="./assets/img/menu-grid-outline.png"
-              alt="logo"
-            />
-           <a href="./dashboard.php"><p>User Dashboard</p></a> 
+            <img src="./assets/img/menu-grid-outline.png" alt="logo" />
+            <a href="./dashboard.php">
+              <p>User Dashboard</p>
+            </a>
           </div>
           <div class="side-options">
             <img src="./assets/img/file-arrow-up-light.png" alt="logo" />
-            <a href="./files.html"><p>Files</p></a>
+            <a href="./files.html">
+              <p>Files</p>
+            </a>
           </div>
           <div class="side-options">
             <img src="./assets/img/settings-check.png" alt="logo" />
-            <a href="./settings.html"><p>Settings</p></a>
+            <a href="./settings.html">
+              <p>Settings</p>
+            </a>
           </div>
           <div class="side-options">
             <img src="./assets/img/support-outline.png" alt="logo" />
-            <a href="./support.php"><p>Support</p></a>
+            <a href="./support.php">
+              <p>Support</p>
+            </a>
           </div>
         </div>
         <div class="side-options">
@@ -68,16 +70,16 @@ if (isset($_SESSION["email"])) {
       </aside>
       <div class="main-content">
         <div style="color: rgba(37, 37, 37, 0.75);">
-            <h3>Welcome!</h3>
-            <p>
-                Create and generate T&C and Private Policy for your business in few steps
-            </p>
+        <div class="nav"><i class="fa-solid fa-bars fa-2xl ham" ondblclick="toggleOff()" onclick="toggle()"></i><h3>Welcome!</h3></div>
+          <p>
+            Create and generate T&C and Private Policy for your business in few steps
+          </p>
         </div>
         <div class="container">
           <div class="containers">
             <p style="color: #7c5ff2; font-size: 2em; cursor: pointer"><a style="text-decoration: none;" href="stage-one1.html">+</a></p>
             <h4>Terms & Conditions</h4>
-            
+
           </div>
           <div class="containers">
             <p style="color: #7c5ff2; font-size: 2em; cursor: pointer"><a style="text-decoration: none;" href="stage-one2.html">+</a></p>
@@ -96,5 +98,21 @@ if (isset($_SESSION["email"])) {
       <a href="#">Blog</a>
       <a href="#">Newsletter</a>
     </footer>
+    <style>
+      @media all and (min-width: 600px) {
+        .ham {
+          display: none;
+        }
+      }
+    </style>
+    <script>
+      function toggle() {
+        document.getElementById("aside").style.display = "flex"
+      }
+      function toggleOff() {
+        document.getElementById("aside").style.display = "none"
+      }
+    </script>
 </BODY>
+
 </HTML>
