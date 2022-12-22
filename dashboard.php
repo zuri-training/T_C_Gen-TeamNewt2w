@@ -1,25 +1,9 @@
-<?php
-session_start();
-if (empty($_SESSION["email"])) {
-  header("Location:index.html");}
-if (isset($_SESSION["email"])) {
-    $email = $_SESSION["email"];
-    session_write_close();
-} else {
-    // since the username is not set in session, the user is not-logged-in
-    // he is trying to access this Terms and Conditions Services unauthorized
-    // so let's clear all session variables and redirect him to index
-    session_unset();
-    session_write_close();
-    $url = "./dashboard.php";
-    header("Location: $url");
-}
 
-?>
 <HTML>
 <HEAD>
   <TITLE>Welcome: Terms and Conditions Generator</TITLE>
   <link rel="stylesheet" type="text/css" href="./assets/css/styles.css">
+  <script src="./assets/js/index.js"></script>
   <script src="https://kit.fontawesome.com/c2d4955c4d.js" crossorigin="anonymous"></script>
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/img/Frame 361.png" />
 </HEAD>
@@ -105,14 +89,6 @@ if (isset($_SESSION["email"])) {
         }
       }
     </style>
-    <script>
-      function toggle() {
-        document.getElementById("aside").style.display = "flex"
-      }
-      function toggleOff() {
-        document.getElementById("aside").style.display = "none"
-      }
-    </script>
 </BODY>
 
 </HTML>

@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Support</title>
     <link rel="stylesheet" type="text/css" href="./assets/css/styles.css">
+    <script src="https://kit.fontawesome.com/c2d4955c4d.js" crossorigin="anonymous"></script>
+    <script src="./assets/js/index.js"></script>
     <link
       rel="icon"
       type="image/png"
@@ -22,7 +24,7 @@
       </div>
     </nav>
     <main>
-      <aside>
+      <aside id="aside">
         <div>
           <div class="side-options">
             <img src="./assets/img/dark-menu-grid-outline.png" alt="logo" />
@@ -49,6 +51,7 @@
         </div>
       </aside>
       <div class="main-content-support" >
+        <i class="fa-solid fa-bars fa-2xl ham" ondblclick="toggleOff()" onclick="toggle()"></i>
         <h3>Support</h3>
         <h5>Have any enquiry? Get in touch with us now</h5>
         <p style="color: #149014;">info@newt.com</p>
@@ -66,5 +69,12 @@
       <a href="#">Blog</a>
       <a href="#">Newsletter</a>
     </footer>
+    <style>
+      @media all and (min-width: 600px) {
+        .ham {
+          display: none;
+        }
+      }
+    </style>
   </body>
 </html>

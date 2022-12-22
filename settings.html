@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Settings</title>
     <link rel="stylesheet" type="text/css" href="./assets/css/styles.css">
+    <script src="https://kit.fontawesome.com/c2d4955c4d.js" crossorigin="anonymous"></script>
+    <script src="./assets/js/index.js"></script>
     <link
       rel="icon"
       type="image/png"
@@ -22,7 +24,7 @@
       </div>
     </nav>
     <main>
-      <aside>
+      <aside id="aside">
         <div>
           <div class="side-options">
             <img src="./assets/img/dark-menu-grid-outline.png" alt="logo" />
@@ -48,6 +50,29 @@
           </div>
         </div>
       </aside>
+      <div class="main-content-settings">
+        <i class="fa-solid fa-bars fa-2xl ham" ondblclick="toggleOff()" onclick="toggle()"></i>
+<div><button class="next-step-btn" style="margin-bottom: 50px;">Forgot Password</button><br>
+<button class="next-step-btn">Update Profile</button>
+</div>
+      </div>
     </main>
+    <footer class="Dashboard-footer">
+      <a href="#">Help</a>
+      <a href="#">Support</a>
+      <a href="#">Contact Us</a>
+      <a href="#">FAQs</a>
+      <a href="#">Legal Dictionary</a>
+      <a href="#">Security FAQ</a>
+      <a href="#">Blog</a>
+      <a href="#">Newsletter</a>
+    </footer>
+    <style>
+      @media all and (min-width: 600px) {
+        .ham {
+          display: none;
+        }
+      }
+    </style>
   </body>
   </html>

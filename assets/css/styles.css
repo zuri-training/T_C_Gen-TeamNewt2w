@@ -63,7 +63,8 @@ aside a {
 .main-content-three,
 .main-content-four,
 .main-content-support,
-.main-content-files {
+.main-content-files,
+.main-content-settings {
   padding: 40px 50px;
 }
 
@@ -288,5 +289,17 @@ margin-right: 10px;
   }
   .grid-this{
   grid-template-columns: auto;
+  }
+  .main-content-files{
+    height: 76vh;
+  }
+  .files-nav{
+    flex-direction: column;
+  }
+  .main-content-support{
+    height: 75vh;
+  }
+  .main-content-settings{
+    height: 75vh;
   }
 }
