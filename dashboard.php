@@ -1,4 +1,20 @@
-
+<?php
+session_start();
+if (empty($_SESSION["email"])) {
+  header("Location:index.html");}
+if (isset($_SESSION["email"])) {
+    $email = $_SESSION["email"];
+    session_write_close();
+} else {
+    // since the username is not set in session, the user is not-logged-in
+    // he is trying to access this Terms and Conditions Services unauthorized
+    // so let's clear all session variables and redirect him to index
+    session_unset();
+    session_write_close();
+    $url = "./dashboard.php";
+    header("Location: $url");
+}
+?>
 <HTML>
 <HEAD>
   <TITLE>Welcome: Terms and Conditions Generator</TITLE>

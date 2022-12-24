@@ -69,34 +69,32 @@
             Non-Profit, Partnership, limited Liability Comapny...) <br>
           <div class="grid-this">
             <div>
-<label for="country"><b> Enter your country. </b></label>
+<label for="country"><b> Enter your country. </b></label><br>
           <input class="text-input" type="text" name="country" required placeholder="My Country" id="country"/>
             </div>
             <div>
-   <label for="state"> <b>Enter your state.</b></label>  
+   <label for="state"> <b>Enter your state.</b></label>  <br>
          <input class="text-input" type="text" name="state" required placeholder="My State" id="state"/>
             </div>
           </div>
           
-          <div class="main-content-four">
-        <div class="container-stagefour" style="gap: 3%;" >
-          <div style="margin-top: 20%; ">
+          <div >
+            <form action="./generate-pdf.php">
+        <div class="container-stagefour">
+          <div>
             <h4>
               Your email address to receive the <br />
               Terms and conditions
             </h4>
-            <input type="text" re placeholder="example@gmail.com" id="stagefour-input"/>
+            <input type="text" placeholder="example@gmail.com" id="stagefour-input"/>
           </div>
-          <form action="./generate-pdf.php">
+          
             <div class="preview">
             <img src="../assets/img/Frame 362.png" />
-            <button style="margin-left: 100%; margin-top: 20%;" type="submit">Preview</button>
-              <!-- <button id="button1" type="submit">Generate </button> -->
+          </div></div>
+            <button class="preview-btn" type="submit">Preview</button>
               <button id="button2" type="submit">Generate and Download</button>
-          </div>
           </form>
-          
-        </div>
       </div>
     </form>
     </div>

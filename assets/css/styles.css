@@ -173,7 +173,8 @@ input[type="checkbox"]{
 }
 .container-stagefour{
   display: flex;
-  justify-content: space-between;
+  margin-top: 30px;
+  margin-bottom: 20px;
 }
 #stagefour-input{
   text-indent: 10px;
@@ -187,27 +188,17 @@ input[type="checkbox"]{
 }
 .preview img{
   width: 278px;
+  margin-left: 70px;
   box-shadow: 6px 6px 13px #fff, 6px 6px 13px rgb(0 0 0 / 16%);
 }
-.preview button{
+.preview-btn{
   width: 100px;
   height: 30px;
   border-radius: 5px;
   background-color: #fff;
   color: #3ebb3e;
   border: 1.5px solid #3ebb3e;
-  /* position: relative; */
-  right: 200px;
-  top: 30px;
 }
-/* #button1{
-  width: 205px;
-  height: 40px;
-  border-radius: 5px;
-  background-color: #fff;
-  color: #3ebb3e;
-  border: 1.5px solid #3ebb3e;
-} */
 #button2{
   width: 195px;
   height: 40px;
